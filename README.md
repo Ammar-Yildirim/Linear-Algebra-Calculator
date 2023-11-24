@@ -22,7 +22,9 @@ java linear.EquationSolver.java  2,3,5,8 1,2,3,5 4,6,8,12 to run the program
 This will solve the system of equations represented by the matrix:
 
 2x + 3y + 5z = 8
+
 1x + 2y + 3z = 5
+
 4x + 6y + 8z = 12
 
 The result will be printed to the console.
