@@ -3,6 +3,7 @@ package linear;
 import linear.algebra.GaussianElimination;
 
 public class EquationSolver{
+    
     public static double[][] parseMatrix(String[] input) {
         double[][] matrix = new double[input.length][];
         
@@ -21,6 +22,7 @@ public class EquationSolver{
         }
         return doubles;
     }
+
     public static void main(String[] args) {
         if (args.length > 0) {
             double[][] matrix = parseMatrix(args);

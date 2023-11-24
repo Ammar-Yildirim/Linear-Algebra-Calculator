@@ -8,12 +8,15 @@ public class GaussianElimination{
     public int getRows(){
         return rows;
     }
+    
     public int getCols(){
         return cols;
     }
+
     public double[][] getMatrix(){
         return matrix;
     }
+
     public void setMatrix(double[][] matrix){
         int numRows = matrix.length;
         int numCols = matrix[0].length;
@@ -67,18 +70,21 @@ public class GaussianElimination{
             }
         }
     }
+
     private void multiplyAndAddRow(int addRow, int mulRow, int colIndex) {
         double f = matrix[addRow][colIndex] / matrix[mulRow][colIndex];
         for(int j = colIndex; j<cols ; j++ ){
             matrix[addRow][j] -= matrix[mulRow][j] * f;
         }
     }
+
     private void multiplyRow(int rowIndex, int colIndex){
         double d = matrix[rowIndex][colIndex];
         for(int j = colIndex; j<cols; j++){
             matrix[rowIndex][j] /= d;
         }
     }
+
     public void backSubstitution() {
         for (int i = rows - 1; i >= 0; i--) {
             if (matrix[i][i] == 0) {
@@ -89,6 +95,7 @@ public class GaussianElimination{
             }
         }
     }
+
     private void checkMatrixDimensions(double[][] array) {
         //No details about it on canvas
     }
@@ -121,6 +128,7 @@ public class GaussianElimination{
             System.out.println();
         }
     }
+
     public void printMatrix(){
         for(int i=0; i<rows; i++){
             for(int j=0; j<cols; j++){
@@ -129,5 +137,4 @@ public class GaussianElimination{
             System.out.println();
         }
     }    
-
 }
