@@ -41,5 +41,5 @@ The project includes both structural and functional tests using JUnit. These tes
 
 To run the tests, follow the instructions in the "Getting Started" section.
 
-Contributing
+## Contributing
 If you'd like to contribute to the project, please fork the repository, make your changes, and submit a pull request. Ensure that your code passes all existing tests and consider adding new tests for any additional functionality.
