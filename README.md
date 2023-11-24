@@ -34,7 +34,7 @@ Clone the repository:
 git clone https://github.com/your-username/gaussian-elimination-solver.git
 
 To run the tests:
-Run compile.bat
+./compile.bat
 
 ## Testing
 The project includes both structural and functional tests using JUnit. These tests ensure the correctness of the implementation and help catch any regressions.
